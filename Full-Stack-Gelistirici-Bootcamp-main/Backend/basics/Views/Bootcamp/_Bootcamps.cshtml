@@ -1,0 +1,12 @@
+@model Bootcamp;
+@if(@Model.isActive){
+
+<div class="card m-3" id="@Model.id" style="width: 18rem;">
+    <img src="~/img/@Model.Image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Title</h5>
+        <p class="card-text">@Model.Description</p>
+        <a asp-controller="Bootcamp" asp-action="Details" asp-route-id="@Model.id" class="btn btn-success">Detay</a>
+    </div>
+</div>
+}

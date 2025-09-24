@@ -1,0 +1,8 @@
+@model List<Bootcamp>
+
+            <div class="row">
+                @foreach (var btc in Model)
+                {
+                    @await Html.PartialAsync("_Bootcamps",btc)
+                }
+            </div>
